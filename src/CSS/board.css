@@ -1,0 +1,120 @@
+:root {
+    --dimension: 180px;
+    --minusDimension: 80px;
+    --veryLightBlue: rgb(92 112 237);
+    --red: rgb(203 75 93);
+    --yellow: rgb(224 169 67);
+}
+
+.game-container {
+    position: relative;
+    margin: 6rem 0 0 0;
+    justify-content: center;
+}
+.traingle-container{
+    max-width: 425px;
+    width: 50%;
+}
+
+.triangle {
+    width: 100%;
+}
+
+.shape{
+    position: absolute;
+    width: var(--dimension);
+    height: var(--dimension);
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--white);
+}
+.blue-border{
+    border: 2rem var(--veryLightBlue) solid;
+}
+.red-border{
+    border: 2rem var(--red) solid;
+}
+.yellow-border{
+    border: 2rem var(--yellow) solid;
+}
+.paper{
+    top: -20%;
+    left: 28%;
+}
+.scissors{
+    top: -20%;
+    left: 55%;
+}
+.rock{
+    top: 59%;
+    left: 41%;
+}
+.rotate {
+    rotate: 90deg;
+}
+.img{
+    width: 50%;
+    height: 50%;
+}
+.rules{
+    position: absolute;
+     top: 92%;
+    padding: 5px;
+     left: 87%;
+    font-size: 2em;
+     width: 125px;
+    justify-content: center;
+     align-items: center;
+    margin: auto;
+    border: 1px solid var(--white);
+    border-radius: 5px;
+    color: var(--white);
+}
+
+@media screen and (max-width: 500px) {
+    .shape {
+        position: absolute;
+        width: var(--minusDimension);
+        height: var(--minusDimension);
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: var(--white);
+    }
+    .blue-border{
+        border: 1rem var(--veryLightBlue) solid;
+    }
+    .red-border{
+        border: 1rem var(--red) solid;
+    }
+    .yellow-border{
+        border: 1rem var(--yellow) solid;
+    }
+    .scissors{
+        top: -30%;
+    }
+    .paper{
+        top: -30%;
+        left: 20%;
+    }
+    .rock{
+        top: 59%;
+        left: 34%;
+    }
+    .rules{
+        position: absolute;
+        top: 75%;
+        padding: 5px;
+        left: 31%;
+        font-size: 2em;
+        width: 125px;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid var(--white);
+        border-radius: 5px;
+        color: var(--white);
+    }
+}
+
+

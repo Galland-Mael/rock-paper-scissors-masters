@@ -1,0 +1,6 @@
+
+.container {
+    background: radial-gradient(at 50% 0%, var(--lightBlue),var(--blue));
+    height: 100vh;
+    padding: 30px 0 10px 0;
+}
